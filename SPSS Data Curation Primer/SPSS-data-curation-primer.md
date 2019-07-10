@@ -55,7 +55,7 @@ See also: Primers authored by the workshop attendees at DLF: http://datacuration
 | Versions | 25.0Most recent version as of 12/21/2018. See release notes: [http://www-01.ibm.com/support/docview.wss?uid=swg27049975](http://www-01.ibm.com/support/docview.wss?uid=swg27049975) |
 | Primary fields or areas of use | Social sciences, psychology, education, health sciences, and survey data |
 | Source and affiliation | [SPSS Statistics](https://www.ibm.com/products/spss-statistics) is a software package initially created by SPSS Inc. It was acquired by IBM in 2009 and currently it is named IBM SPSS Statistics. |
-| Metadata | The SPSS Dictionary (also called &quot;code book&quot;) is part of the SPSS data file (.sav, .por) and it holds all metadata, specifically,.sav: C_an_ contain names and labels for variables, an unformatted textual description, and an extension record with attributes..por: C_an_ contain names and labels for variables and an unformatted textual description. |
+| Metadata | The SPSS Dictionary (also called &quot;code book&quot;) is part of the SPSS data file (.sav, .por) and it holds all metadata, specifically, .sav: Can contain names and labels for variables, an unformatted textual description, and an extension record with attributes.  .por: Can contain names and labels for variables and an unformatted textual description. |
 | Key questions for curation review | **1.** What version of SPSS were these files created with? Which is the latest version at the time of curation? Which versions are currently supported by the software producers and common operating systems? **2.** Are the variables well-described (with labels, etc.) within SPSS variables table? Is there an external codebook or data dictionary? **3.** Is there an additional README file describing  project level information and data information? **4.** Is the data &quot;native&quot; to SPSS, or was it exported to SPSS from another statistical package? **5.** Which files (e.g., data, syntax, output) are essential to effectively sharing this data? Which are optional? **6.** What is the profile of potential re-users of this data? **7.** Is this data likely to be only of immediate use and interest, or is there a &quot;longer tail&quot; of potential reuse? **8.** Is a complete copy of the survey or interview instrument available as a separate file?
 | Tools for curation review | **1.**[SPSS](https://www.ibm.com/ca-en/marketplace/spss-statistics) **2.**[Smartreader for SPSS Statistics](https://developer.ibm.com/predictiveanalytics/docs/spss-statistics/programmability/extensions-tools-and-utilities-for-spss-statistics/) **3.**[PSPP](https://www.gnu.org/software/pspp/) **4.**[PSPP](https://www.gnu.org/software/pspp/) **5.**[ViewSav](http://www.asselberghs.dds.nl/stuff.htm) **6.**[R](https://cran.r-project.org/web/packages/rio/vignettes/rio.html) (Haven and rio packages) **7.**[SAS](https://www.sas.com/) (SAS v.9.1.3 and later) **8.**[STATA](https://ideas.repec.org/c/boc/bocode/s456957.html) (USESPSS)|
 | Date Created | 12/21/2018 |
@@ -84,7 +84,7 @@ While this primer primarily discusses .sav and .por files, there are other possi
 
 # Example Data
 
-**Examples below link to study in the iCPSR which offers SPSS as a download option.**
+**Examples below link to study in the ICPSR which offers SPSS as a download option.**
   
   - United States. Bureau of Justice Statistics. Survey of Inmates in State and Federal Correctional Facilities, [United States], 2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributer], 2018-12-19. [https://doi.org/10.3886/ICPSR0472.v5](https://doi.org/10.3886/ICPSR0472.v5)
 
@@ -106,7 +106,7 @@ Researchers noted the proprietary (and expensive) nature of SPSS software as par
 
 **What kind of data do researchers generate on import into SPSS?**
 
-Researchers interviewed used a range of structured data inputs with SPSS including tabular data and relational databeses, with information from a variety of sources: web data, survey responses, model simulations, etc.
+Researchers interviewed used a range of structured data inputs with SPSS including tabular data and relational databases, with information from a variety of sources: web data, survey responses, model simulations, etc.
 
 One researcher described his research using a diary study for a project in cognitive psychology. The participant diaries were coded by hand, and the codes were input as tabular data into SPSS. The researcher then used regression analysis and structural equation modeling tools within SPSS to look for patterns across diaries.
 
@@ -118,7 +118,7 @@ Researchers generally described making use of SPSS functions to document their d
 
 **What kind of data outputs are researchers able or willing to share from SPSS?**
 
-Researchers interviewed primarily export their data file created in SPSS into a non-proprietary format (e.g., csv), if they intend to share it or analyze it with another piece of software. Researchersalso reported sharing the syntax file to describe table structures and methods of analysis. Codebooks were also considered essential for sharing data. Based on the interviews, while the practices of researchers vary, the curators can include essential data for the datasets. If needed, the curator can generate from the datasets the researchers provided such as variable list and data dictionary.
+Researchers interviewed primarily export their data file created in SPSS into a non-proprietary format (e.g., csv), if they intend to share it or analyze it with another piece of software. Researchers also reported sharing the syntax file to describe table structures and methods of analysis. Codebooks were also considered essential for sharing data. Based on the interviews, while the practices of researchers vary, the curators can include essential data for the datasets. If needed, the curator can generate from the datasets the researchers provided such as variable list and data dictionary.
 
 # Key Questions
 
@@ -186,7 +186,7 @@ It is recommended to document datasets created in the research lifecycle, and us
 
 **Data Level Metadata**
 
-The IBM SPSS Statistics software can create embedded documentation for the dataset. Data files in the software contain embedded metadata that describes and defines the data in the file. This data level metadatacan be exported.
+The IBM SPSS Statistics software can create embedded documentation for the dataset. Data files in the software contain embedded metadata that describes and defines the data in the file. This data level metadata can be exported.
 
 The most important metadata for SPSS data includes:
 
@@ -204,7 +204,7 @@ Other metadata information includes:
 
 1. Width: the maximum number of characters that a value can have. (Required)
 
-2. Decimals: information on howto display numeric values. (Required)
+2. Decimals: information on how to display numeric values. (Required)
 
 3. Columns: Column width for a variable. (Required)
 
@@ -218,7 +218,7 @@ A **codebook**, or a **data dictionary** can be created from an SPSS data file.
 
 a. The data dictionary contains metadata that describes various properties of the data file.
 
-b. Researchers are recommended to to provide data dictionaries for their dataset. If this information is not provided, the curator can export one from the dataset project file. The data dictionary can be saved as a .pdf or a text file. The following steps can be followed to export a data dictionary.
+b. Researchers are recommended to provide data dictionaries for their dataset. If this information is not provided, the curator can export one from the dataset project file. The data dictionary can be saved as a .pdf or a text file. The following steps can be followed to export a data dictionary.
 
 In the data file, click File> Display Data File Information > Working File, for metadata attributes of the variables to be displayed and printed to the Output Viewer window (See Figures 1 and 2). Using "Display Dictionary" command in the syntax window can produce the same result.
 
